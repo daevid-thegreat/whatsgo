@@ -5,11 +5,11 @@ import Link from "next/link";
 export default function Home() {
   return (
       <>
-          <main className="px-14 pt-4 bg-[#A5FFF4]">
-              <div className={'text-center items-center h-screen'}>
+          <main className="px-14 md:px-4 pt-4 bg-[#A5FFF4]">
+              <div className={'text-center items-center h-screen md:h-fit'}>
                   <Navbar/>
-                  <div className={'mt-[10%]'}>
-                      <h1 className={'text-6xl font-extrabold font-lexend text-[#1F4144] my-6'}>
+                  <div className={'mt-[10%] md:mt-[20%] md:mb-24'}>
+                      <h1 className={'text-6xl md:text-5xl font-extrabold font-lexend text-[#1F4144] my-6'}>
                           Send that message
                           <br/>
                           <span className={'text-black'}> NOW!!!</span>
@@ -25,17 +25,17 @@ export default function Home() {
                       </div>
                   </div>
               </div>
-              <div className={'flex items-center justify-between px-24 my-8'}>
+              <div className={'flex md:flex-col md:px-4 items-center justify-between px-24 my-8'}>
                   <Image src={'/b1.png'} alt={'WhatsGo'} width={410} height={455}/>
-                  <div>
+                  <div className={'md:my-6'}>
                       <h1 className={'font-lexend text-5xl font-extrabold my-6'}>Your identity is yours</h1>
                       <p className={'font-jetbrains text-xl underline underline-offset-2 my-3'}>PS: We take your privacy
                           seriously</p>
                   </div>
               </div>
 
-              <div className={'flex items-center justify-between px-24 my-8'}>
-                  <div>
+              <div className={'flex md:flex-col-reverse md:px-4 items-center justify-between px-24 my-8 md:my-16'}>
+                  <div className={'md:my-6'}>
                       <h1 className={'font-lexend text-5xl font-extrabold my-6'}>Globally Available!</h1>
                       <p className={'font-jetbrains text-xl my-3'}>Whether you are In Nigeria, Netherlands, Australia,
                           Germany or Canada,
@@ -46,7 +46,7 @@ export default function Home() {
                   <Image src={'/b2.png'} alt={'WhatsGo'} width={564} height={367.81}/>
               </div>
 
-              <div className={'flex items-center justify-between px-24 mt-8 pb-8'}>
+              <div className={'flex md:flex-col md:px-4 items-center justify-between px-24 mt-8 pb-8'}>
                   <Image src={'/b3.png'} alt={'WhatsGo'} width={369} height={369}/>
                   <div>
                       <h1 className={'font-lexend text-5xl font-extrabold my-6'}>We work with father time</h1>
@@ -54,7 +54,7 @@ export default function Home() {
                   </div>
               </div>
           </main>
-          <footer className={'bg-white border-2 border-black flex justify-between px-20 py-14'}>
+          <footer className={'bg-white border-2 border-black flex md:flex-col md:px-4 justify-between px-20 py-14'}>
               <div>
                   <Image src={'/logo.png'} alt={'WHatsGo'} width={224} height={96}/>
               </div>
